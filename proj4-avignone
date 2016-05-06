@@ -1,0 +1,45 @@
+//NANETTE AVIGNONE CST112
+//CREATE AN ARRAY AND FIND LARGEST NUMBER AND MOVE TO BOTTOM
+
+int n;
+int tmp;
+int many=10;
+
+String title= "Project 4";
+String author=  "Nanette Avignone";
+
+
+
+
+
+
+//CREATE ARRAY//
+Number [] value = new Number [many];
+
+//SETUP//
+void setup() {
+  size (300, 300);
+  reset();
+  for (int n=0; n<500; n++) {
+    value[n]=random (0, 500);
+  }     
+}
+
+void reset() {
+  for (int n=0; n<many; n++) {
+    value [n]=new Number ();
+  }
+}
+  void draw() {
+    background (255);
+    fill (0);
+  }
+
+  //// EVENT HANDLERS
+void keyPressed() {
+  if (key == 'q') exit();
+  if (key == 'r') reset();
+}
+Number () {
+  value= random ( 1, 800 );
+}
